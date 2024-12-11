@@ -1,0 +1,47 @@
+﻿.site-header {
+    background-color: white; 
+    color: white;
+    padding: 10px 0; 
+    text-align: center;
+}
+
+.main-container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 15px; 
+}
+
+.header-content {
+    padding: 10px; 
+}
+
+    .header-content h2 {
+        font-size: 24px; 
+        margin: 0; 
+    }
+
+    .header-content p {
+        font-size: 16px; 
+        line-height: 1.5;
+    }
+
+    .header-content a {
+        color: #FFD700; 
+        text-decoration: none; 
+        font-weight: bold;
+    }
+
+        .header-content a:hover {
+            text-decoration: underline;
+        }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-content h2 {
+        font-size: 20px;
+    }
+
+    .header-content p {
+        font-size: 14px; 
+    }
+}

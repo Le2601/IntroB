@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Blogge | Personal Blog Site</title>
+
+  <!--Meta For No Index-->
+  <meta name="robots" content="noindex, Nofollow, Noimageindex">
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Theme Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.svg" type="image/x-icon" />
+</head>
+<style>
+
+  .product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Giữ các sản phẩm về bên trái */
+}
+.product-item {
+  flex: 0 0 auto; /* Không giãn ra, chiều rộng tự động */
+  width: 200px; /* Chiều rộng cố định cho mỗi sản phẩm */
+  margin: 10px; /* Khoảng cách giữa các sản phẩm */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px;
+  text-align: center;
+}
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .product-item {
+      flex: 0 0 calc(50% - 10px); /* 2 sản phẩm mỗi hàng trên màn hình nhỏ */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .product-item {
+      flex: 0 0 100%; /* 1 sản phẩm mỗi hàng trên màn hình rất nhỏ */
+    }
+  }
+
+
+
+  /* /breadcrumb/ */
+  .breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb span {
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 14px; /* Giảm kích thước chữ trên màn hình nhỏ */
+  }
+}
+
+
+</style>
+
+<body>
+
+<!-- Navbar Start -->
+<nav class="main-nav navbar navbar-expand-lg">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img class="logo-main" src="images/logo.svg" alt="logo" />
+    </a>
+    <!-- Toogle Button -->
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-list" id="mainNav">
+      <!-- Navigation Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <!-- Social Link -->
+      <ul class="main-nav-social">
+        <li>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+
+<section class="about">
+  <div class="container">
+    <nav class="breadcrumb">
+      <a href="/">Trang chủ</a>
+      <span> > </span>
+      <a href="/danh-muc">Danh mục</a>
+      <span> > </span>
+      <a href="/san-pham">Sản phẩm</a>
+    </nav>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.myDLkZEn1HDUmV7DQn1WSAHaHa&pid=Api&P=0&h=220" width="192px" alt="Tên sản phẩm 1">
+            <h3>Tên sản phẩm 1</h3>
+            <p>Giá sỉ: 100.000 VNĐ</p>
+            <p>Giá lẻ: 120.000 VNĐ</p>
+          </div>
+          <div class="product-item">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.xARxOCOQsQegIqplzNH_DAAAAA&pid=Api&P=0&h=220" width="192px" alt="Tên sản phẩm 1">
+            <h3>Tên sản phẩm 2</h3>
+            <p>Giá sỉ: 100.000 VNĐ</p>
+            <p>Giá lẻ: 120.000 VNĐ</p>
+          </div>
+          <div class="product-item">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.FYnQRtHjdBDLCh5xZSadQwHaHa&pid=Api&P=0&h=220" width="192px" alt="Tên sản phẩm 1">
+            <h3>Tên sản phẩm 3</h3>
+            <p>Giá sỉ: 100.000 VNĐ</p>
+            <p>Giá lẻ: 120.000 VNĐ</p>
+          </div>
+          <div class="product-item">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.myDLkZEn1HDUmV7DQn1WSAHaHa&pid=Api&P=0&h=220" width="192px" alt="Tên sản phẩm 1">
+            <h3>Tên sản phẩm 1</h3>
+            <p>Giá sỉ: 100.000 VNĐ</p>
+            <p>Giá lẻ: 120.000 VNĐ</p>
+          </div>
+          <div class="product-item">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.xARxOCOQsQegIqplzNH_DAAAAA&pid=Api&P=0&h=220" width="192px" alt="Tên sản phẩm 1">
+            <h3>Tên sản phẩm 2</h3>
+            <p>Giá sỉ: 100.000 VNĐ</p>
+            <p>Giá lẻ: 120.000 VNĐ</p>
+          </div>
+          <div class="product-item">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.FYnQRtHjdBDLCh5xZSadQwHaHa&pid=Api&P=0&h=220" width="192px" alt="Tên sản phẩm 1">
+            <h3>Tên sản phẩm 3</h3>
+            <p>Giá sỉ: 100.000 VNĐ</p>
+            <p>Giá lẻ: 120.000 VNĐ</p>
+          </div>
+     
+          <!-- Thêm nhiều sản phẩm nếu cần -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="instagram">
+  <a href="#">
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+    <span>@Mary_Astor</span>
+  </a>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="instagram-item">
+
+          <div class="instagram-item-thum">
+            <img src="images/blog/case-studies-1.png" alt="image">
+          </div>
+          <div class="instagram-item-thum">
+            <img src="images/blog/case-studies-2.png" alt="image">
+          </div>
+          <div class="instagram-item-thum">
+            <img src="images/blog/case-studies-3.png" alt="image">
+          </div>
+          <div class="instagram-item-thum">
+            <img src="images/blog/case-studies-4.png" alt="image">
+          </div>
+          <div class="instagram-item-thum">
+            <img src="images/blog/case-studies-5.png" alt="image">
+          </div>
+          <div class="instagram-item-thum">
+            <img src="images/blog/case-studies-6.png" alt="image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 mx-auto text-center">
+        <div class="footer-logo">
+          <img src="images/logo.svg" alt="logo" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <div class="footer-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <div class="sociale-icon">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="copy-right">
+          <p>© Copyright <span id="copyrightYear"></span> - All Rights Reserved by <a href="https://staticmania.com/" target="_blank">StaticMania</a> Distributed By <a href="https://themewagon.com/" target="blank">ThemeWagon</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9rV6yesIygoVKTD6QLf_iCa9eiIIHqZ0&libraries=geometry">
+</script>
+<!-- Vendor JS -->
+<script src="vendor/jQuery/jquery.min.js"></script>
+<script src="vendor/bootstrap/bootstrap.min.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
+<script src="vendor/g-map/gmap.js"></script>
+<!-- Main JS -->
+<script src="js/script.js"></script>
+</body>
+
+</html>

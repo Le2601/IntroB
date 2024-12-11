@@ -1,0 +1,139 @@
+﻿
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+/* Định dạng container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Bố cục danh mục */
+.category-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+/* Danh mục từng phần */
+.category-card {
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .category-card:hover {
+        transform: translateY(-5px); /* Hiệu ứng hover */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .category-card img {
+        width: 100%; /* Hình ảnh phủ toàn bộ chiều rộng */
+        height: auto;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .category-card h3 {
+        font-size: 20px;
+        margin: 15px 0 10px;
+        color: #333;
+    }
+
+    .category-card p {
+        font-size: 14px;
+        color: #666;
+        padding: 0 15px 15px;
+        margin-bottom: 0px;
+    }
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .category-card h3 {
+        font-size: 18px;
+    }
+
+    .category-card p {
+        font-size: 13px;
+    }
+}
+
+
+/* icon */
+.social-buttons {
+    position: fixed;
+    right: 10px;
+    bottom: 10px; /* Đặt nút ở phía dưới */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.zalo {
+    background-color: #0078ff; /* Màu Zalo */
+}
+
+.phone {
+    background-color: #0078ff; /* Màu đỏ cho biểu tượng điện thoại */
+}
+
+.social-btn span {
+    display: none; /* Ẩn văn bản */
+}
+
+.social-btn:hover {
+    opacity: 0.8; /* Hiệu ứng hover */
+}
+
+
+/* banner */
+/* Đặt banner full chiều rộng màn hình */
+.banner-wrapper {
+    position: relative;
+    width: 100%; /* Full chiều rộng màn hình */
+    overflow: hidden; /* Ẩn phần thừa của ảnh nếu cần */
+    margin: 0; /* Xóa khoảng cách mặc định */
+    padding: 0;
+}
+
+/* Ảnh banner */
+.banner-image {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của khung chứa */
+    height: auto; /* Tự động điều chỉnh chiều cao theo tỉ lệ ảnh */
+    display: block; /* Loại bỏ khoảng trắng của ảnh inline */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .banner-image {
+        object-fit: cover; /* Đảm bảo ảnh cắt gọn nếu cần */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-image {
+        object-fit: contain; /* Đảm bảo ảnh thu nhỏ toàn bộ để vừa màn hình */
+    }
+}
+
+
+
+
+
+

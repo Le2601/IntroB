@@ -1,0 +1,41 @@
+﻿/* General Styles */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+}
+
+.category {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.view-more {
+  font-size: 16px;
+  color: #2980b9;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .view-more {
+    font-size: 18px;
+  }
+
+  /* Change "Xem thêm" to an arrow when responsive */
+  .view-more::after {
+    content: "→"; /* Arrow symbol */
+    font-size: 18px;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+
+  .view-more {
+    text-align: right; /* Align the arrow text to the right */
+  }
+}
