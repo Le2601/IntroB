@@ -103,13 +103,63 @@
           margin: 15px 0 0 0;
       }
 
+
+      .footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.footer-address {
+  text-align: left;
+}
+
+.footer-about {
+  text-align: right;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .footer-address, .footer-about {
+    text-align: center;
+  }
+  .text-right {
+    text-align: center;
+  }
+}
+
+
 </style>
 
 <body>
 
   <div class="top-bar ">
-    <span><a href="https://www.google.com/maps/dir/10.146164,105.64471/10.146162,105.644789/@@10.1460956,105.6421286,17z/data=!3m1!4b1!4m6!4m5!1m1!4e1!1m1!4e1!3e0?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Địa chỉ: 123 Đường ABC, Quận XYZ</a></span>
-    <span>SĐT: 0123 456 789 | Email: example@gmail.com</span>
+    <span><a style="color: black;" href="https://www.google.com/maps/dir/10.146164,105.64471/10.146162,105.644789/@@10.1460956,105.6421286,17z/data=!3m1!4b1!4m6!4m5!1m1!4e1!1m1!4e1!3e0?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Địa chỉ: 123 Đường ABC, Quận XYZ</a></span>
+    <span >SĐT: 0123 456 789 | Email: example@gmail.com</span>
 </div>
 
 <nav class="navbar">
@@ -132,9 +182,9 @@
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle">DANH MỤC</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Danh mục 1</a></li>
-                    <li><a href="#">Danh mục 2</a></li>
-                    <li><a href="#">Danh mục 3</a></li>
+                    <li><a href="#">Bao Bì</a></li>
+                    <li><a href="#">Bọc</a></li>
+                    <li><a href="#">Dây Thun</a></li>
                 </ul>
             </li>
             <li class="nav-item">
@@ -167,113 +217,125 @@
 </div>
 <div class="product-slider">
   <div class="product-card">
-      <img style="height:200px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
+      <img style="height:190px ; width: 200px;" src="images/product/baobi/1.jpg" alt="Túi vải">
       <p>Túi vải Túi vải Túi vải Túi vải </p>
 
   </div>
   <div class="product-card">
-      <img style="height:200px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
+      <img style="height:190px ; width: 200px;" src="images/product/boc/1.jpg" alt="Túi vải">
       <p>Túi vải</p>
   </div>
   <div class="product-card">
-      <img style="height:200px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
+      <img style="height:190px ; width: 200px;" src="images/product/daythun/z6119110376935_596e0340775b2c4c91a59195eb055d7e.jpg" alt="Túi vải">
       <p>Túi vải</p>
   </div>
   <div class="product-card">
-      <img style="height:200px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
+      <img style="height:190px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
       <p>Túi vải</p>
   </div>
   <div class="product-card">
-      <img style="height:200px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
+      <img style="height:190px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
       <p>Túi vải</p>
   </div>
   <div class="product-card">
-      <img style="height:200px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
+      <img style="height:190px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
       <p>Túi vải</p>
   </div>
 
 </div>
-
 <div class="container ">
   <p class="category">Túi Nilong</p>
   <a  href="~~/" class="view-more">Xem thêm</a>
 </div>
 <div class="product-slider">
 
-  <div class="product-card">
-      <img style="height:200px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;" src="images/product/boc/1.jpg" alt="Túi vải">
       <p>Túi vải Túi vải Túi vải Túi vải </p>
-      <a class="btn">Xem ngay</a>
+      <a href="https://le2601.github.io/IntroB/single-blog.html" class="btn">Xem ngay</a>
 
   </div>
-  <div class="product-card">
-      <img style="height:200px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;"  src="images/product/boc/2.jpg" alt="Túi vải">
       <p>Túi vải Túi vải Túi vải Túi vải </p>
-      <a class="btn">Xem ngay</a>
+      <a href="https://le2601.github.io/IntroB/single-blog.html" class="btn">Xem ngay</a>
 
   </div>
-  <div class="product-card">
-      <img style="height:200px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;" src="images/product/boc/3.jpg" alt="Túi vải">
       <p>Túi vải Túi vải Túi vải Túi vải </p>
-      <a class="btn">Xem ngay</a>
+      <a href="https://le2601.github.io/IntroB/single-blog.html" class="btn">Xem ngay</a>
 
   </div>
-  <div class="product-card">
-      <img style="height:200px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;" src="images/product/boc/4.jpg" alt="Túi vải">
       <p>Túi vải Túi vải Túi vải Túi vải </p>
-      <a class="btn">Xem ngay</a>
+      <a href="https://le2601.github.io/IntroB/single-blog.html" class="btn">Xem ngay</a>
 
   </div>
-  <div class="product-card">
-      <img style="height:200px ; width: 200px;" src="images/th.jpg" alt="Túi vải">
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;" src="images/product/boc/3.jpg" alt="Túi vải">
       <p>Túi vải Túi vải Túi vải Túi vải </p>
-      <a class="btn">Xem ngay</a>
+      <a href="https://le2601.github.io/IntroB/single-blog.html" class="btn">Xem ngay</a>
 
   </div>
 
 </div>
 
 
-<section class="instagram">
-  <a href="#">
-    <i class="fa fa-instagram" aria-hidden="true"></i>
-    <span>@Mary_Astor1</span>
-  </a>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="instagram-item">
 
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-1.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-2.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-3.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-4.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-5.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-6.png" alt="image">
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="container ">
+  <p class="category">Bao Bì</p>
+  <a  href="~~/" class="view-more">Xem thêm</a>
+</div>
+<div class="product-slider">
+
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;" src="images/product/baobi/1.jpg" alt="Túi vải">
+      <p>Bao bì 01 </p>
+      <a href="https://le2601.github.io/IntroB/single-blog.html" class="btn">Xem ngay</a>
+
   </div>
-</section>
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;"  src="images/product/baobi/z6119110367492_cd21dfcb11869c7efd00f5da302c2858.jpg" alt="Túi vải">
+      <p>Bao bì 02 </p>
+      <a href="https://le2601.github.io/IntroB/single-blog.html" class="btn">Xem ngay</a>
+
+  </div>
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;" src="images/product/boc/3.jpg" alt="Túi vải">
+      <p>Túi vải Túi vải Túi vải Túi vải </p>
+      <a href="https://le2601.github.io/IntroB/single-blog.html" class="btn">Xem ngay</a>
+
+  </div>
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;" src="images/product/boc/4.jpg" alt="Túi vải">
+      <p>Túi vải Túi vải Túi vải Túi vải </p>
+      <a href="https://le2601.github.io/IntroB/single-blog.html" class="btn">Xem ngay</a>
+
+  </div>
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;" src="images/product/boc/3.jpg" alt="Túi vải">
+      <p>Túi vải Túi vải Túi vải Túi vải </p>
+      <a href="https://le2601.github.io/IntroB/single-blog.html" class="btn">Xem ngay</a>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
 
 <section class="footer">
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-6 mx-auto text-center">
         <div class="footer-logo">
-          <img src="images/logo.svg" alt="logo" />
+          <h3>BAO BÌ CẦN THƠ</h3>
         </div>
       </div>
     </div>
@@ -282,13 +344,13 @@
         <div class="footer-nav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
+              <a class="nav-link" href="index.html">Trang Chủ </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About </a>
+              <a class="nav-link" href="about.html">Giới Thiệu </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.html">Liên Hệ</a>
             </li>
           </ul>
         </div>
@@ -311,14 +373,25 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="copy-right">
-          <p>© Copyright <span id="copyrightYear"></span> - All Rights Reserved by <a href="https://staticmania.com/" target="_blank">StaticMania</a> Distributed By <a href="https://themewagon.com/" target="blank">ThemeWagon</a></p>
+    <div class="footer container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="footer-address">
+            <h5>Địa chỉ</h5>
+            <p>123 Đường ABC, Phường XYZ, Quận 1, TP. Hồ Chí Minh</p>
+            <p>Điện thoại: 0123 456 789</p>
+            <p>Email: contact@example.com</p>
+          </div>
+        </div>
+        <div class="col-lg-6 text-right">
+          <div class="footer-about">
+            <h5>Về chúng tôi</h5>
+            <p>Công ty chúng tôi chuyên cung cấp các giải pháp công nghệ tiên tiến, giúp khách hàng đạt được thành công và hiệu quả tối đa.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    
 </section>
 
 

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Blogge | Personal Blog Site</title>
+  <title>Bao Bì Cần Thơ</title>
 
   <!--Meta For No Index-->
   <meta name="robots" content="noindex, Nofollow, Noimageindex">
@@ -12,205 +12,520 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
+
+  <meta name="robots" content="index, follow" />
+<meta name="author" content="Bao bì cần thơ" />
+<meta name="keywords" content="bao bì, in ấn, túi nilon, sản xuất bao bì, dịch vụ in, doanh nghiệp bao bì, bao bì cần thơ" />
+
+  <meta name="description" content="Bao bì Cần Thơ - Cung cấp bao bì, túi nilon, màng ghép và các sản phẩm in ấn chất lượng cao. Đáp ứng mọi nhu cầu kinh doanh của bạn." />
+  <meta name="description" content="Bao bì cần thơ [Ô môn - Cần Thơ].Bao bì cần thơ. Bao bì ô môn" />
+
+
+  <meta>
+
   <!-- Theme Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
   <link rel="icon" href="images/favicon.svg" type="image/x-icon" />
+
+
+
+  <link href="css/csscustom/header_titlehome.css" rel="stylesheet" />
+  <link href="css/stylesheet.css" rel="stylesheet" />
+  <link href="css/csscustom/header_listitem.css" rel="stylesheet" />
+
+  <link href="css/csscustom/menu_client.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
+<style>
+  .btn {
+      background-color: #3498db;
+      color: white;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      display: inline-block;
+  }
+
+      .btn:hover {
+          background-color: #2980b9;
+          transform: translateY(-3px);
+      }
+
+      .btn:active {
+          transform: translateY(1px);
+      }
+
+      .product-slider {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .product-card {
+      text-align: center; /* Canh giữa toàn bộ nội dung trong thẻ */
+      padding: 5px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      display: flex;
+      flex-direction: column; /* Xếp nội dung theo chiều dọc */
+      justify-content: center; /* Canh giữa nội dung theo chiều dọc */
+      align-items: center; /* Canh giữa nội dung theo chiều ngang */
+      height: 200px; /* Đặt chiều cao cố định cho các thẻ sản phẩm */
+  }
+
+      .product-card img {
+          width: 100%;
+          max-width: 200px; /* Giới hạn kích thước hình ảnh */
+          border-radius: 5px;
+          display: block; /* Đảm bảo hình ảnh được hiển thị là khối */
+          margin: auto;
+      }
+
+      .product-card p {
+          font-size: 16px;
+          font-weight: bold;
+          color: #333;
+          margin: 15px 0 0 0;
+      }
+
+
+      .footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.footer-address {
+  text-align: left;
+}
+
+.footer-about {
+  text-align: right;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .footer-address, .footer-about {
+    text-align: center;
+  }
+  .text-right {
+    text-align: center;
+  }
+}
+
+
+
+.breadcrumbs {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .breadcrumbs a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    .breadcrumbs span {
+        font-weight: bold;
+    }
+
+    .product-detail {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .product-title {
+        font-size: 24px;
+        margin: 0;
+    }
+    .product-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    .product-info {
+        margin-top: 20px;
+    }
+    .product-specs th {
+        text-align: left;
+        padding-right: 10px;
+    }
+    .product-specs td {
+        padding: 5px 0;
+    }
+    .product-category a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    .share-buttons a {
+        margin-right: 10px;
+        font-size: 20px;
+        color: #555;
+        text-decoration: none;
+    }
+
+    .contact-buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .btn-contact {
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    .zalo-btn {
+        background-color: #0084ff;
+    }
+    .fb-btn {
+        background-color: #4267b2;
+    }
+    .phone-btn {
+        background-color: #28a745;
+    }
+
+    .product-description h2, .product-reviews h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .product-detail {
+            padding: 10px;
+        }
+        .product-specs {
+            font-size: 14px;
+        }
+        .contact-buttons {
+            flex-direction: column;
+        }
+    }
+
+
+
+    /* Phong cách chung cho bảng */
+.product-description h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Màu nền xen kẽ */
+.product-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.product-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Responsive: Card-style layout khi màn hình nhỏ */
+@media (max-width: 768px) {
+    .product-table {
+        display: block;
+        border: none;
+    }
+
+    .product-table tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-table th {
+        display: none; /* Ẩn tiêu đề cột */
+    }
+
+    .product-table td {
+        display: block;
+        text-align: left;
+        font-size: 14px;
+        padding: 8px 10px;
+        position: relative;
+    }
+
+    .product-table td:before {
+        content: attr(data-label); /* Lấy tiêu đề từ data-label */
+        position: absolute;
+        left: 10px;
+        top: 8px;
+        font-weight: bold;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .product-table td {
+        padding-left: 120px;
+        position: relative;
+    }
+}
+
+</style>
 
 <body>
 
-<!-- Navbar Start -->
-<nav class="main-nav navbar navbar-expand-lg">
-  <div class="container">
-    <!-- Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img class="logo-main" src="images/logo.svg" alt="logo" />
-    </a>
-    <!-- Toogle Button -->
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <div class="collapse navbar-collapse nav-list" id="mainNav">
-      <!-- Navigation Links -->
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <!-- Social Link -->
-      <ul class="main-nav-social">
-        <li>
-          <a href="#"><i class="fa fa-facebook"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-        </li>
-      </ul>
+  <div class="top-bar ">
+    <span><a style="color: black;" href="https://www.google.com/maps/dir/10.146164,105.64471/10.146162,105.644789/@@10.1460956,105.6421286,17z/data=!3m1!4b1!4m6!4m5!1m1!4e1!1m1!4e1!3e0?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Địa chỉ: 123 Đường ABC, Quận XYZ</a></span>
+    <span >SĐT: 0123 456 789 | Email: example@gmail.com</span>
+</div>
+
+<nav class="navbar">
+    <div class="container" style="background:#2c3e50">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="#">LOGO</a>
+        </div>
+
+        <!-- Toggle Button for Mobile -->
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <!-- Menu -->
+        <ul class="nav" id="menu">
+            <li class="nav-item">
+                <a href="https://le2601.github.io/IntroB/" class="nav-link">TRANG CHỦ</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle">DANH MỤC</a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://le2601.github.io/IntroB/category.html">Bao Bì</a></li>
+                    <li><a href="https://le2601.github.io/IntroB/">Bọc</a></li>
+                    <li><a href="https://le2601.github.io/IntroB/">Dây Thun</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">GIỚI THIỆU</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">LIÊN HỆ</a>
+            </li>
+        </ul>
     </div>
-  </div>
 </nav>
+  
 <!-- Navbar End -->
-
-<section class="blog-single">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-2 order-2 order-lg-1">
-        <div class="share-now">
-          <a href="#" class="scrol">Share</a>
-          <div class="sociel-icon">
-            <ul>
-              <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-10 order-1 order-lg-2">
-        <article class="single-blog">
-          <a href="#" class="tag">Travel</a>
-          <p class="title">Five Things You Need to Know
-            to Start Your Day</p>
-          <ul class="meta">
-            <li>By <a href="about.html">Mary Astor</a></li>
-            <li>
-              <i class="fa fa-clock-o"></i>
-              October 19, 2020 - 2 min
-            </li>
-          </ul>
-          <img src="images/blog/blog-single.png" alt="banner">
-
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-            <br>
-            <br>
-
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus est Lorem ipsum dolor sit amet. <br> <br>
-
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-            <br>
-            <br>
-
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-            sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-          <h3>Make better business</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-            <br> <br>
-
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-          <blockquote>
-            <p>"You’ve got to get up every morning with determination if you’re going to go to bed with satisfaction."
-            </p>
-          </blockquote>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-            <br> <br>
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-          <div class="single-blog-banner">
-            <div class="banner"> <img src="images/blog/single-blog.png" alt="banner">
-            </div>
-            <div class="banner"> <img src="images/blog/single-blog-2.png" alt="banner">
-            </div>
-          </div>
-          <h3>The Dreamy Factors</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-            <br> <br>
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-        </article>
-        <div class="blog-single-presentation">
-          <ul>
-            <li> <a href="#" class="tag">PREVIOUS</a>
-              <a href="#" class="title">I Moved Across the Country
-                and Never Looked Back</a>
-              <i class="fa fa-clock-o"></i>
-              October 19, 2020 - 2 min
-            </li>
-            <li> <a href="#" class="tag">Next</a><a href="#" class="title">Every Next Level of Your Life
-                Will Demand a Different</a><i class="fa fa-clock-o"></i>
-              October 19, 2020 - 2 min</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+<div class="container">
+  <div class="breadcrumbs">
+    <a href="/">Trang chủ</a> &gt;
+    <a href="/danh-muc/tui-nilon">Túi Nilon</a> &gt;
+    <span>Túi PE Trong Suốt</span>
   </div>
-</section>
+</div>
+<div class="container">
 
-<section class="instagram">
-  <a href="#">
-    <i class="fa fa-instagram" aria-hidden="true"></i>
-    <span>@Mary_Astor</span>
-  </a>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="instagram-item">
-
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-1.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-2.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-3.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-4.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-5.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-6.png" alt="image">
-          </div>
-        </div>
-      </div>
+  
+  <div class="product-detail">
+    <h1 class="product-title">TÚI PE TRONG SUỐT</h1>
+  
+    <div class="product-image">
+        <img src="images/product/baobi/z6119110367492_cd21dfcb11869c7efd00f5da302c2858.jpg" width="400" alt="Túi PE Trong Suốt" />
     </div>
+  
+    <div class="product-info">
+        <table class="product-specs">
+            <tr>
+                <th>Chất liệu</th>
+                <td>PE</td>
+            </tr>
+            <tr>
+                <th>Kích thước</th>
+                <td>20x30, 24x34, 26x40, 30x42, 35x50, 40x60</td>
+            </tr>
+            <tr>
+                <th>Đơn vị sản xuất</th>
+                <td>Bao Bì Cần Thơ</td>
+            </tr>
+        </table>
+        <div class="product-category">
+            Danh mục: <a href="/danh-muc/tui-nilon/tui-nilon-pe">Túi Nilon</a>
+        </div>
+        <div class="share-buttons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+  
+    <div class="contact-buttons">
+        <a href="https://zalo.me/your-zalo-id" class="btn btn-contact zalo-btn">Liên hệ qua Zalo</a>
+        <a href="https://facebook.com/your-facebook-page" class="btn btn-contact fb-btn">Liên hệ qua Facebook</a>
+        <a href="tel:your-phone-number" class="btn btn-contact phone-btn">Gọi điện thoại</a>
+    </div>
+  
+    <div class="product-description">
+       
+        <div class="product-description">
+          <h3>Thông tin sản phẩm</h3>
+          <table class="product-table">
+              <tr>
+                  <th>Tên sản phẩm</th>
+                  <td data-label="Tên sản phẩm">Túi nilon PE trong suốt</td>
+              </tr>
+              <tr>
+                  <th>Chất liệu</th>
+                  <td data-label="Chất liệu">Hạt nhựa nguyên sinh</td>
+              </tr>
+              <tr>
+                  <th>Độ dày</th>
+                  <td data-label="Độ dày">7 micro</td>
+              </tr>
+              <tr>
+                  <th>Kích thước</th>
+                  <td data-label="Kích thước">20×30, 24×34, 26×40, 30×42, 35×50, 40×60</td>
+              </tr>
+              <tr>
+                  <th>Đặc điểm</th>
+                  <td data-label="Đặc điểm">Màu trong suốt để nhìn thấy vật dụng bên trong</td>
+              </tr>
+              <tr>
+                  <th>Ưu điểm</th>
+                  <td data-label="Ưu điểm">Có độ dẻo, chống thấm nước</td>
+              </tr>
+              <tr>
+                  <th>Công dụng</th>
+                  <td data-label="Công dụng">Bảo quản quần áo, đồ shop thời trang, phụ kiện</td>
+              </tr>
+              <tr>
+                  <th>Phương pháp</th>
+                  <td data-label="Phương pháp">In lụa hoặc <span style="color: green; font-weight: bold;">in ống đồng</span></td>
+              </tr>
+              <tr>
+                  <th>Giá</th>
+                  <td data-label="Giá">39.000đ/kg</td>
+              </tr>
+          </table>
+      </div>
+      
+        <p>
+            Các doanh nghiệp, shop thời trang lựa chọn túi PE trong suốt để dựng những sản phẩm một cách thẩm mỹ nhất. 
+            Dưới đây là một số thông tin, các mẫu túi nilon PE trong suốt này.
+        </p>
+    </div>
+  
+   
   </div>
-</section>
+</div>
+
+
+<div class="container ">
+  <p class="category">Sản Phẩm Liên Quan</p>
+  <a  href="~~/" class="view-more">Xem thêm</a>
+</div>
+<div class="product-slider">
+
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;" src="images/product/baobi/1.jpg" alt="Túi vải">
+      <p>Bao bì 01 </p>
+      <a class="btn">Xem ngay</a>
+
+  </div>
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;"  src="images/product/baobi/z6119110367492_cd21dfcb11869c7efd00f5da302c2858.jpg" alt="Túi vải">
+      <p>Bao bì 02 </p>
+      <a class="btn">Xem ngay</a>
+
+  </div>
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;" src="images/product/boc/3.jpg" alt="Túi vải">
+      <p>Túi vải Túi vải Túi vải Túi vải </p>
+      <a class="btn">Xem ngay</a>
+
+  </div>
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;" src="images/product/boc/4.jpg" alt="Túi vải">
+      <p>Túi vải Túi vải Túi vải Túi vải </p>
+      <a class="btn">Xem ngay</a>
+
+  </div>
+  <div class="product-card" style="height: 300px;">
+      <img style="height:190px ; width: 200px;" src="images/product/boc/3.jpg" alt="Túi vải">
+      <p>Túi vải Túi vải Túi vải Túi vải </p>
+      <a class="btn">Xem ngay</a>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
 
 <section class="footer">
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-6 mx-auto text-center">
         <div class="footer-logo">
-          <img src="images/logo.svg" alt="logo" />
+          <h3>BAO BÌ CẦN THƠ</h3>
         </div>
       </div>
     </div>
@@ -219,13 +534,13 @@
         <div class="footer-nav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
+              <a class="nav-link" href="index.html">Trang Chủ </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About </a>
+              <a class="nav-link" href="about.html">Giới Thiệu </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.html">Liên Hệ</a>
             </li>
           </ul>
         </div>
@@ -248,15 +563,41 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="copy-right">
-          <p>© Copyright <span id="copyrightYear"></span> - All Rights Reserved by <a href="https://staticmania.com/" target="_blank">StaticMania</a> Distributed By <a href="https://themewagon.com/" target="blank">ThemeWagon</a></p>
+    <div class="footer container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="footer-address">
+            <h5>Địa chỉ</h5>
+            <p>123 Đường ABC, Phường XYZ, Quận 1, TP. Hồ Chí Minh</p>
+            <p>Điện thoại: 0123 456 789</p>
+            <p>Email: contact@example.com</p>
+          </div>
+        </div>
+        <div class="col-lg-6 text-right">
+          <div class="footer-about">
+            <h5>Về chúng tôi</h5>
+            <p>Công ty chúng tôi chuyên cung cấp các giải pháp công nghệ tiên tiến, giúp khách hàng đạt được thành công và hiệu quả tối đa.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    
 </section>
+
+
+
+<div class="social-buttons">
+  <a href="https://zalo.me/0363380697" target="_blank" class="social-btn zalo">
+    <img src="https://classic.vn/wp-content/uploads/2022/07/zalo-icon.png" alt="Zalo" width="30" height="30"/>
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=100037124952614" class="social-btn phone">
+    <img src="https://i.pinimg.com/originals/ee/28/3a/ee283a1348a90c6db74c2937493fce74.png" alt="Zalo" width="30" height="30"/>
+  </a>
+  <!-- <a href="https://m.me/nguyenngoc.le.5437" class="social-btn phone">
+    <img src="https://i.pinimg.com/originals/ee/28/3a/ee283a1348a90c6db74c2937493fce74.png" alt="Zalo" width="30" height="30"/>
+  </a> -->
+</div>
+
 
 <!-- Google Map -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9rV6yesIygoVKTD6QLf_iCa9eiIIHqZ0&libraries=geometry">
@@ -268,6 +609,60 @@
 <script src="vendor/g-map/gmap.js"></script>
 <!-- Main JS -->
 <script src="js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.product-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.getElementById("menuToggle");
+      const menu = document.getElementById("menu");
+
+      // Toggle menu on button click
+      menuToggle.addEventListener("click", function (e) {
+          e.stopPropagation(); // Prevent click from propagating to document
+          menu.classList.toggle("active");
+      });
+
+      // Close menu when clicking outside of it
+      document.addEventListener("click", function (e) {
+          if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
+              menu.classList.remove("active");
+          }
+      });
+  });
+</script>
 </body>
 
 </html>
